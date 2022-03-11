@@ -1,0 +1,13 @@
+spring:
+    datasource:
+        impala:
+            driver-class-name: com.cloudera.impala.jdbc41.Driver
+            jdbc-url: jdbc:impala://192.168.1.81:21050/default
+            username: root
+            password: 123456
+        hive:
+            driver-class: org.apache.hive.jdbc.HiveDriver
+            jdbc-url: jdbc:hive2://192.168.1.80:10000/default
+            type: org.apache.tomcat.jdbc.pool.DataSource
+            username: hive
+            password: hive
